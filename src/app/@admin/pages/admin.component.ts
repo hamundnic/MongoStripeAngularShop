@@ -8,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class AdminComponent implements OnInit {
 
   constructor() { }
-
+toggleValue=true;
   ngOnInit(): void {
   }
+  toggled(event:any){
+console.log(event);
 
+this.toggleValue=event;
+  }
 }
